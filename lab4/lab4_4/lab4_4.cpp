@@ -4,11 +4,10 @@
 #include <locale.h> //подключаем библиотеку для локализации
 int main()          //точка входа в программу
 {
-	float a, b;    //объявление переменных
-	double sum, ras, pr, ch;
+	double a, b, sum, ras, pr, ch; //объявление переменных
 	setlocale(LC_ALL, "Rus"); //функция локализации на русский язык
-	printf("Введите a>>"); scanf_s("%f", &a); //вывод запроса и чтение переменной
-	printf("Введите b>>"); scanf_s("%f", &b);
+	printf("Введите a>>"); scanf_s("%lf", &a); //вывод запроса и чтение переменной
+	printf("Введите b>>"); scanf_s("%lf", &b);
 	sum = a * a + b * b;
 	ras = a * a - b * b;
 	pr = a * a * b * b;
