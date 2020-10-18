@@ -1,7 +1,7 @@
+//Даны три точки A, B, C на числовой оси. Найти длины отрезков AC и BC и их сумму.
 #include <stdio.h>
 #include <math.h>
 #include <locale.h>
-
 main()
 {
 	int x1, x2, x3, y1, y2, y3;
