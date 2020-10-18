@@ -15,4 +15,5 @@ main()
 	printf("Длина AC равна %.2f\n", Lac);
 	printf("Длина BC равна %.2f\n", Lbc);
 	printf("Сумма отрезков равна %.2f", Lac + Lbc);
+	return 0;
 }
