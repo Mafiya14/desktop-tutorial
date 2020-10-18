@@ -1,12 +1,12 @@
 //Даны три точки A, B, C на числовой оси. Найти длины отрезков AC и BC и их сумму.
-#include <stdio.h>
-#include <math.h>
-#include <locale.h>
+#include <stdio.h> //подключаем библиотеку для ввода вывода
+#include <math.h> //подключаем библиотеку для вычисления основных математических функций (sqrt, pow)
+#include <locale.h> //подключаем библиотеку для локализации
 main()
 {
 	int x1, x2, x3, y1, y2, y3;
 	float Lac, Lbc;
-	setlocale(LC_ALL, "Rus");
+	setlocale(LC_ALL, "Rus"); //локализация на русский язык
 	printf("введите координаты точки А>>"); scanf_s("%d%d", &x1, &y1);
 	printf("введите координаты точки В>>"); scanf_s("%d%d", &x2, &y2);
 	printf("введите координаты точки С>>"); scanf_s("%d%d", &x3, &y3);
