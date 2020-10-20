@@ -1,12 +1,11 @@
-ï»¿#include <stdio.h>
+#include <stdio.h>
 #include <locale.h>
-
 int main()
 {
 	float a, b;
-	setlocale(LC_ALL, "Rus"); //Ñ„ÑƒÐ½ÐºÑ†Ð¸Ñ Ð»Ð¾ÐºÐ°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð½Ð° Ñ€ÑƒÑÑÐºÐ¸Ð¹ ÑÐ·Ñ‹Ðº
-	printf("Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ A B>>"); scanf_s("%f%f", &a, &b);
-	while (a >= b) 
+	setlocale(LC_ALL, "Rus"); //ôóíêöèÿ ëîêàëèçàöèè íà ðóññêèé ÿçûê
+	printf("ââåäèòå A B>>"); scanf_s("%f%f", &a, &b);
+	while (a >= b)
 		a = a - b;
 	printf("%f", a);
 	return(0);
