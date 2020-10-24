@@ -6,7 +6,7 @@
 int main() {
 	int a, b, c, n;
 	setlocale(LC_ALL, "Rus");
-	printf("введите a, b, c>>"); scanf_s("%d%d%d", &a, &b, &c);
+	printf("введите a, b и c>>"); scanf_s("%d%d%d", &a, &b, &c);
 	n = a * b / (c * c);
 	printf("n=%d", n);
 	return 0;
