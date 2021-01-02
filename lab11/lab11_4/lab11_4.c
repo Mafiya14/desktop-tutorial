@@ -1,6 +1,5 @@
 //Даны координаты точки, не лежащей на координатных осях OX и OY. Определить номер координатной четверти, в которой находится данная точка
 #include <stdio.h>
-#include <math.h>
 int main() {
 	int x, y;
 	printf("coordinates x and y>>"); scanf_s("%d%d", &x, &y);
