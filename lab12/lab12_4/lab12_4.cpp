@@ -18,7 +18,7 @@ int main()
 	a = n / 100; //сотни
 	b = n / 10 % 10; //десятки
 	c = n % 10; //единицы
-	if ((b == 1) and (c != 0)) cout << hundreds[a - 1] <<" " << numb[c-1];
+	if ((b == 1) and (c != 0)) cout << hundreds[a - 1] << " " << numb[c-1];
 	else cout << hundreds[a - 1] << dozens[b] << " " << units[c];
 	return 0;
 }
