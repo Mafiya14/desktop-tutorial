@@ -7,32 +7,30 @@ int main() {
 	int n;
 	char c;
 	setlocale(LC_ALL, "Rus");
-	printf("введите исходное направление робота и команду>>"); scanf_s("%c", &c);
-	printf("введите команду>>");
-	scanf_s("%d", &n);
-	printf("%d", n);
+	printf("введите исходное направление робота («N» — север, «W» — запад, «S» — юг, «E» — восток)>>"); scanf_s("%c", &c);
+	printf("введите команду>>"); scanf_s("%d", &n);
 	switch (c) {
-	case 'N': 
+	case 'N':
 		if (n == 1) printf("запад");
 		if (n == -1) printf("восток");
 		if (n == 0) printf("север");
 		break;
-	case 'W': 
+	case 'W':
 		if (n == 1) printf("юг");
 		if (n == -1) printf("север");
-		if (n == 0) printf("запад"); 
+		if (n == 0) printf("запад");
 		break;
 	case 'S':
 		if (n == 1) printf("восток");
 		if (n == -1) printf("запад");
 		if (n == 0) printf("юг");
 		break;
-	case 'E': 
+	case 'E':
 		if (n == 1) printf("север");
 		if (n == -1) printf("юг");
-		if (n == 0) printf("восток"); 
+		if (n == 0) printf("восток");
 		break;
 	default: printf("нет соответствий, введено некорректное направление");
-	} 
+	}
 	return 0;
 }
