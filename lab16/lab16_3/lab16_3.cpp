@@ -6,25 +6,19 @@ using namespace std;
 
 int main()
 {
-	int N, A, B;
+	int N, A, B, s;
 	setlocale(LC_ALL, "Rus");
 	cout << "введите N, A и B>>";
 	cin >> N >> A >> B;
 	int* mass = new int[N];
 	mass[0] = A; cout << mass[0] << "\n"; 
 	mass[1] = B; cout << mass[1] << "\n";
-	for (int i = 2; i < N; i++)
+	s = mass[0] + mass[1];
+	mass[2] = s; cout << mass[2] << "\n";
+	for (int i = 3; i < N; i++)
 	{
-		if (i % 2 != 0)
-		{
-			B = A + B;
-			mass[i] = B;
-		}
-		else
-		{
-			A = B + A;
-			mass[i] = A;
-		}
+		s = s + mass[i - 1];
+		mass[i] = s;
 		cout << mass[i] << "\n";
 	}
 	delete[] mass; // очистка памяти
