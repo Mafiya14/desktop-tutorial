@@ -18,4 +18,5 @@ int main()
 		cout << mass[i] << "\n";
 	}
 	return 0;
+	delete[] mass; // очистка памяти
 }
