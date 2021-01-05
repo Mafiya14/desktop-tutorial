@@ -13,11 +13,14 @@ float PowerA3 (float A)
 
 int main()
 {
-	float A, B; 
+	float A; 
+	int i;
 	setlocale(LC_ALL, "Rus");
-	cout << "введите A>>";
-	cin >> A;
-	B = PowerA3(A);
-	cout << B;
+	for (i = 1; i <= 5; i++)
+	{
+		cout << "введите число>>";
+		cin >> A;
+		cout << "третья степень>>" << PowerA3(A) << "\n";
+	}
 	return 0;
 }
