@@ -16,5 +16,6 @@ int main()
 		mass[i] = A * pow(D, i);
 		cout << mass[i] << "\n";
 	}
+	delete[] mass; // очистка памяти
 	return 0;
 }
