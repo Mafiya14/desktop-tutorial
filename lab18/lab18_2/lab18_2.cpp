@@ -6,26 +6,21 @@ using namespace std;
 
 int main()
 {
-	int N, i, t;
+	int N, i;
+	float s;
 	setlocale(LC_ALL, "Rus");
+	s = 0;
 	cout << "введите N>>";
 	cin >> N;
-	int* A = new int[N];
-	int* B = new int[N];
-	//инициализация массива А
+	float* A = new float[N];
+	float* B = new float[N];
 	cout << "введите элементы массива A>>";
 	for (i = 0; i < N; i++)
 	{
 		cin >> A[i];
+		s = s + A[i];
+		B[i] = s / (i + 1);
 	}
-	//обработка массивов
-	for (i = 0; i < N; i++)
-	{
-		t = A[i];
-		A[i] = B[i];
-		B[i] = t;
-	}
-	//вывод массива В
 	cout << "массив B>>";
 	for (i = 0; i < N; i++)
 	{
