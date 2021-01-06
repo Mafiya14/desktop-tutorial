@@ -7,9 +7,7 @@ using namespace std;
 int main()
 {
 	int N, i, t;
-	bool flag;
 	setlocale(LC_ALL, "Rus");
-	flag = 0;
 	cout << "введите N>>";
 	cin >> N;
 	int* A = new int[N];
