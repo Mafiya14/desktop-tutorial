@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	int N, i, max, min, k, j;
+	int N, i, k;
 	bool flag;
 	flag = 0;
 	k = 0;
