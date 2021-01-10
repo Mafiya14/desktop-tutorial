@@ -1,14 +1,17 @@
-﻿#include <stdio.h>
+﻿//программная реализация быстрой сортировки через параметрические циклы
+#include <stdio.h>
 #include <stdlib.h>
-int b; //
-int e; //
-int l, r, t, arr[] = { -6, 1, 0, 5, 7, 8, 4, 9, -17, 12 };
+int b; //индекс первого элемента массива
+int e; //индекс последнего элемента массива
+int l; //индекс левого элемента
+int r; //индекс правого элемента
+int t, arr[] = { -6, 1, 0, 5, 7, 8, 4, 9, -17, 12 };
 int n = sizeof(arr) / sizeof(int); 
 void qsort(int* arr, int b, int e)
 {
 	if (b < e) 
 	{
-		int piv = arr[(b + e) / 2];
+		int piv = arr[(b + e) / 2]; // номер опорного элемента
 		int r = e;
 		for (l = b; l <= r; l++) 
 		{
